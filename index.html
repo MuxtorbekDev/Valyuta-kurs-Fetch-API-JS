@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>AJAX projects</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Valuta Kurslari!</h1>
+
+      <h4>EUR da kurslar <span class="vaqt"></span></h4>
+      <table>
+        <thead>
+          <tr>
+            <th>T/R</th>
+            <th>Davlat</th>
+            <th>Pul Birlik</th>
+            <th>1 EUR Narxi</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>O'zbekiston</td>
+            <td>UZS</td>
+            <td id="uzs"></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Rossiya</td>
+            <td>RUB</td>
+            <td id="rubil"></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>AQSH</td>
+            <td>USD</td>
+            <td id="usd"></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Polsha</td>
+            <td>PLN</td>
+            <td id="pln"></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Chexiya</td>
+            <td>CZK</td>
+            <td id="czk"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="input-kurs row">
+        <div class="input-field col s6">
+          <input id="SearchOne" type="text" class="validate" />
+          <label class="active" for="first_name2">Search...</label>
+        </div>
+        <a class="waves-effect waves-light btn">Search</a>
+      </div>
+      <h2 class="SearchNarx"></h2>
+      <h3><span id="bitcoin"></span></h3>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
